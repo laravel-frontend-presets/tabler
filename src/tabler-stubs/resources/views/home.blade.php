@@ -1,4 +1,4 @@
-@extends('layouts.full-page')
+@extends('layouts.page')
 
 @section('content')
 <div class="container-xl d-flex flex-column justify-content-center">
