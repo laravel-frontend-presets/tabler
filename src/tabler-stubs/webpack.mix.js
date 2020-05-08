@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css')
-  .extract(['selectize']);
+  .extract(['apexcharts','autosize','flatpickr','fullcalendar','imask','jqvmap','nouislider','peity','selectize']);
 
 if (mix.inProduction()) {
   mix.version();
