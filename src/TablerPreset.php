@@ -46,9 +46,21 @@ class TablerPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         // packages to add to the package.json
-        $packagesToAdd = ['tabler' => '^1.0.0-alpha.7'];
+        $packagesToAdd = [
+          "axios" => "^0.19",
+          "bootstrap" => "^4.0.0",
+          "cross-env" => "^7.0",
+          "jquery" => "^3.2",
+          "laravel-mix" => "^5.0.1",
+          "lodash" => "^4.17.13",
+          "resolve-url-loader" => "^3.1.0",
+          "sass" => "^1.15.2",
+          "sass-loader" => "^8.0.0",
+          'tabler' => '^1.0.0-alpha.7',
+        ];
+        
         // packages to remove from the package.json
-        $packagesToRemove = ['popper.js'];
+        $packagesToRemove = ['@babel/preset-react', 'react', 'react-dom', 'vue', 'vue-template-compiler'];
         return $packagesToAdd + Arr::except($packages, $packagesToRemove);
     }
     /**
