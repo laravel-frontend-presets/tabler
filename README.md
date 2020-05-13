@@ -1,5 +1,3 @@
-Use this repo as a tabler for your new preset, once you're done please open an issue on [this repo](https://github.com/laravel-frontend-presets/tabler).
-
 Here's the latest documentation on Laravel 7.0:
 
 https://laravel.com/docs/master/
